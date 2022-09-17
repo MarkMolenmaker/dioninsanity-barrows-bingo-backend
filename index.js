@@ -61,6 +61,6 @@ app.use("/generalbingocard", generalBingoCardRoutes);
 const playerRoutes = require("./api/bingocard/route/player");
 app.use("/player", playerRoutes);
 
-app.listen(8080, () => {
+app.listen(process.env.PORT || 5000, () => {
     console.log(`App is running on 8080`);
 });
